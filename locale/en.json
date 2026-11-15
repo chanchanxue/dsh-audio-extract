@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Audio extraction",
+    "description": "Extract a video's audio track losslessly into m4a, with optional title, artist, cover art, lyrics and end trimming."
+  }
+}
