@@ -1,0 +1,4 @@
+- insert:
+    - id: dsh-audio-extract
+      name: dsh-audio-extract
+      config: {}
