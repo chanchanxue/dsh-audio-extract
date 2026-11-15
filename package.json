@@ -1,0 +1,58 @@
+{
+  "name": "dsh-audio-extract",
+  "version": "0.1.0",
+  "description": "Lossless audio extraction from video for DeepSeek Harness: stream-copy the audio track into m4a with title, artist, cover art and lyrics tagging.",
+  "type": "module",
+  "license": "MIT",
+  "author": "chanchanxue",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "audio",
+    "ffmpeg",
+    "m4a",
+    "metadata",
+    "cover-art",
+    "lyrics"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chanchanxue/dsh-audio-extract.git"
+  },
+  "homepage": "https://github.com/chanchanxue/dsh-audio-extract#readme",
+  "bugs": {
+    "url": "https://github.com/chanchanxue/dsh-audio-extract/issues"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-connection"
+      ]
+    }
+  }
+}
