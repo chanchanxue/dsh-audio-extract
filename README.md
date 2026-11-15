@@ -2,7 +2,8 @@
 
 Lossless audio extraction from video, as a DeepSeek Harness plugin.
 
-It adds an **音频提取 / Audio extraction** view next to the 3D workbench. Pick a folder, choose the videos, optionally trim the beginning and the end, fill in title/artist, pick a cover image and a lyrics file — the plugin stream-copies the audio track out of each video into an `.m4a` without re-encoding, then writes the metadata.
+It adds an **音频提取 / Audio extraction** view to the session's view switcher, next to the built-in Chat and Trajectory views. Pick a folder, choose the videos,
+optionally trim the beginning and the end, fill in title/artist, pick a cover image and a lyrics file — the plugin stream-copies the audio track out of each video into an `.m4a` without re-encoding, then writes the metadata.
 
 ## What it does
 
@@ -28,7 +29,7 @@ dsh plugin --profile <profile> add github:chanchanxue/dsh-audio-extract
 
 ## Use
 
-1. Open a session, click **音频提取** in the view switcher (right of 3D workbench).
+1. Open a session and pick **音频提取** from the view switcher at the top of the conversation.
 2. Choose the video folder — the videos are listed automatically.
 3. Set the start/end trim if needed, fill title/artist, optionally pick a cover and a lyrics file.
 4. Click **开始提取**. The command result lists every produced file with size, duration and which metadata was written.
